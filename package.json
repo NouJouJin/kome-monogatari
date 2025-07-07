@@ -1,0 +1,19 @@
+{
+  "name": "kome-monogatari",
+  "version": "1.0.0",
+  "description": "A dynamic landing page to generate stories for brand rice.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vibe-coding",
+    "ai",
+    "generator"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "openai": "^4.0.0"
+  }
+}

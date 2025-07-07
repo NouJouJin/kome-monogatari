@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>米ものがたり - ブランド米の物語ジェネレーター</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>米ものがたり</h1>
+        <p>商品に添える「物語」を、AIが自動で紡ぎます。</p>
+    </header>
+
+    <main>
+        <div class="input-section">
+            <h2>物語の材料を入力してください</h2>
+            <form id="story-form">
+                <div class="form-group">
+                    <label for="dev-story">開発秘話</label>
+                    <textarea id="dev-story" rows="4" placeholder="例：幻の品種「〇〇」を5年の歳月をかけて復活させた。"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="weather">その年の天候や風土</label>
+                    <textarea id="weather" rows="4" placeholder="例：記録的な長雨と日照不足を乗り越えた奇跡の年。"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="passion">生産者の想い</label>
+                    <textarea id="passion" rows="4" placeholder="例：子供たちに安心して食べさせられる、本当に美味しいお米を届けたい。"></textarea>
+                </div>
+                <button type="submit" id="generate-btn">物語を生成する</button>
+            </form>
+        </div>
+
+        <div class="output-section">
+            <h2>生成された物語</h2>
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>物語を紡いでいます...</p>
+            </div>
+            <div id="story-output" class="story-box">
+                <p>ここに生成された物語が表示されます。</p>
+            </div>
+            <div id="error-output" class="error-box hidden"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 米ものがたり</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
